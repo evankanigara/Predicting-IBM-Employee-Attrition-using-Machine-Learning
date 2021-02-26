@@ -63,4 +63,5 @@ Proses pembersihan dan transformasi dilakukan dalam sebuah pipeline. Dalam pipel
 | RandomForest   | 0.17        |0.28      | 0.28       |
 | Balanced RandomForest   | 0.72        |0.68      | 0.66       |
 | Balanced Bagging   | 0.63        |0.6      | 0.68       |
+
 Scoring yang diutamakan dalam klasifikasi adalah Recall. Perusahaan ingin sebanyak-banyaknya mencegah pekerjanya yang hendak resign. Kehilangan pekerja akan menyebabkan perusahaan merugi karena harus melaukan rekrutmen dan pelatihan ulang. 
