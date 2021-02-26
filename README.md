@@ -40,11 +40,12 @@ Data terdiri dari 1470 baris dan 35 kolom. Fitur-fiturnya terdiri dari:
 - YearsSinceLastPromotion: Lama tahun sejak promosi terakhir
 - YearsWithCurrManager: Lama tahun dengan manajer saat ini
 
-## Visualisasi Data
+## Visualisasi Data 1
 <img src='/static/visual1.png'>
-#### Pekerja yang lembur cenderung untuk resign  
+Pekerja yang lembur cenderung untuk resign
+## Visualisasi Data 2
 <img src='/static/visual2.png'>
-#### Semakin lama pekerja berada pada perusahaan maka cenderung untuk tidak melakukan resign
+Semakin lama pekerja berada pada perusahaan maka cenderung untuk tidak melakukan resign
 
 
 ## Pre-processing Data
