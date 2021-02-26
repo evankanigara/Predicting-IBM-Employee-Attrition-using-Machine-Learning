@@ -48,5 +48,5 @@ Pekerja yang lembur cenderung untuk resign
 Semakin lama pekerja berada pada perusahaan maka cenderung untuk tidak melakukan resign
 
 ## Pre-processing Data
-Proses pembersihan dan transformasi dilakukan dalam sebuah pipeline. <br>
-<img src='/static/tugas-akhir.png'>
+<img src='/static/drawio.jpg'>
+Proses pembersihan dan transformasi dilakukan dalam sebuah pipeline. 
