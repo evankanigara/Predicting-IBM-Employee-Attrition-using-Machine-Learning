@@ -52,3 +52,9 @@ Semakin lama pekerja berada pada perusahaan maka cenderung untuk tidak melakukan
 ## Pre-processing Data
 <img src='/static/drawio.jpg'>
 Proses pembersihan dan transformasi dilakukan dalam sebuah pipeline. Dalam pipeline dilakukan imputasi untuk meng-handle missing values. Lalu setelah itu dilakukan standarisasi. Untuk data categorical dilakukan encode berupa one hot encoder. PCA juga dilakukan pada fitur yang memiliki korelasi yang cukup tinggi. Setelah proses cleaning dan transformasi maka akan dilakukan feature selection menggunakan RFE. Jumlah data yang tidak berimbang akan diimbangi dengan oversampling SMOTE. Setelah itu data akan siap untuk dilatih dalam model yang sudah dipilih. 
+
+## Hasil
+| Algoritma      | Description |
+| ----------- | ----------- |
+| logit      | Title       |
+| dtc   | Text        |
