@@ -65,3 +65,8 @@ Proses pembersihan dan transformasi dilakukan dalam sebuah pipeline. Dalam pipel
 | Balanced Bagging   | 0.63        |0.6      | 0.68       |
 
 Scoring yang diutamakan dalam klasifikasi adalah Recall. Perusahaan ingin sebanyak-banyaknya mencegah pekerjanya yang hendak resign. Kehilangan pekerja akan menyebabkan perusahaan merugi karena harus melaukan rekrutmen dan pelatihan ulang. Setelah berbagai algoritma digunakan untuk melihat hasil recall terbaik, maka dipilihlah logistic regression. Meskipun begitu, tingkatan presisi secara umum cenderung rendah. Perusahaan harus berhati-hati jangan sampai proses perawatan pekerjanya justru membuat perusahaan merugi lebih banyak. 
+
+## Dashboard
+<img src='/static/dashboard.PNG'>
+
+## Kesimpulan
