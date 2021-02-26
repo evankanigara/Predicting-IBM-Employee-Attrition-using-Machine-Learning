@@ -41,3 +41,7 @@ Data terdiri dari 1470 baris dan 35 kolom. Fitur-fiturnya terdiri dari:
 - YearsWithCurrManager: Lama tahun dengan manajer saat ini
 
 ## Visualisasi Data
+<img src='/static/visual1.PNG'>
+Pekerja yang lembur cenderung untuk resign
+<img src='/static/visual2.PNG'>
+Semakin lama pekerja berada pada perusahaan maka cenderung untuk tidak melakukan resign
