@@ -43,6 +43,7 @@ Data terdiri dari 1470 baris dan 35 kolom. Fitur-fiturnya terdiri dari:
 ## Visualisasi Data 1
 <img src='/static/visual1.png'>
 Pekerja yang lembur cenderung untuk resign
+
 ## Visualisasi Data 2
 <img src='/static/visual2.png'>
 Semakin lama pekerja berada pada perusahaan maka cenderung untuk tidak melakukan resign
