@@ -39,3 +39,5 @@ Data terdiri dari 1470 baris dan 35 kolom. Fitur-fiturnya terdiri dari:
 - YearsInCurrentRole: Lama kerja di divisi saat ini
 - YearsSinceLastPromotion: Lama tahun sejak promosi terakhir
 - YearsWithCurrManager: Lama tahun dengan manajer saat ini
+
+## Visualisasi Data
