@@ -54,7 +54,12 @@ Semakin lama pekerja berada pada perusahaan maka cenderung untuk tidak melakukan
 Proses pembersihan dan transformasi dilakukan dalam sebuah pipeline. Dalam pipeline dilakukan imputasi untuk meng-handle missing values. Lalu setelah itu dilakukan standarisasi. Untuk data categorical dilakukan encode berupa one hot encoder. PCA juga dilakukan pada fitur yang memiliki korelasi yang cukup tinggi. Setelah proses cleaning dan transformasi maka akan dilakukan feature selection menggunakan RFE. Jumlah data yang tidak berimbang akan diimbangi dengan oversampling SMOTE. Setelah itu data akan siap untuk dilatih dalam model yang sudah dipilih. 
 
 ## Hasil
-| Algoritma      | Description |
-| ----------- | ----------- |
-| logit      | Title       |
-| dtc   | Text        |
+| Algoritma      | Recall_CV | Recall_Benchmark      | Recall_Tuned |
+| ----------- | ----------- |----------- | ----------- |
+| logit      | 0.68       |0.68      | 0.77       |
+| dtc   | 0.43        |0.45      | 0.70   |
+| knn   | 0.58        |0.62      | 0.74       |
+| naive-bayes   | 0.84        |0.77      | -       |
+| RandomForest   | 0.17        |0.28      | 0.28       |
+| Balanced RandomForest   | 0.72        |0.68      | 0.66       |
+| Balanced Bagging   | 0.63        |0.6      | 0.68       |
