@@ -29,18 +29,45 @@ def result():
         input = request.form
 
         df_to_predict = pd.DataFrame({
-            'alcohol': [input['Alcohol']],
-            'density': [input['Density']],
-            'fixed acidity level': [input['fal']],
-            'chlorides level': [input['cl']]
+            'Age': [input['age']],
+            'BusinessTravel': [input['fal']],
+            'DailyRate': [input['daily_rate']],
+            'Department': [input['department']],
+            'DistanceFromHome': [input['distance_from_home']],
+            'Education': [input['education']],
+            'EducationField': [input['education_field']],
+            'EnvironmentSatisfaction': [input['environment_satisfaction']],
+            'Gender': [input['gender']],
+            'HourlyRate': [input['hourly_rate']],
+            'JobInvolvement': [input['job_involvement']],
+            'JobLevel': [input['job_level']],
+            'JobRole': [input['job_role']],
+            'JobSatisfaction': [input['JobSatisfaction']],
+            'MaritalStatus': [input['marital_status']],
+            'MonthlyIncome': [input['monthly_income']],
+            'MonthlyRate': [input['monthly_rate']],
+            'NumCompaniesWorked': [input['num_companies_worked']],
+            'OverTime': [input['over_time']],
+            'PercentSalaryHike': [input['percent_salary_hike']],
+            'PerformanceRating': [input['performance_rating']],
+            'RelationshipSatisfaction': [input['relationship_statisfaction']],
+            'StockOptionLevel': [input['stock_option_level']],
+            'TotalWorkingYears': [input['total_working_years']],
+            'TrainingTimesLastYear': [input['training_times_last_year']],
+            'WorkLifeBalance': [input['work_life_balance']],
+            'YearsAtCompany': [input['years_at_company']],
+            'YearsInCurrentRole': [input['years_in_current_role']],
+            'YearsSinceLastPromotion': [input['years_since_last_promotion']],
+            'YearsWithCurrManager': [input['years_with_curr_manager']]
         })
 
+        #class_label = model.predict(df_to_predict)[0]
         prediksi = model.predict_proba(df_to_predict)[:,1]
 
-        if prediksi > 0.5:
-            quality = 'Good'
+        if prediksi >0.5:
+            quality = 'Attrition'
         else:
-            quality = 'Bad'
+            quality = 'Not Attrition'
 
         return render_template('result.html', data=input, pred=quality)
 
