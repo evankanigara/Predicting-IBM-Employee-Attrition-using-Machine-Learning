@@ -76,7 +76,7 @@ Scoring yang diutamakan dalam klasifikasi adalah Recall. Perusahaan ingin sebany
 <img src='/static/dashboard_visual.PNG'>
 
 ## Dashboard Flask: Predict
-<img src='/static/dashboard_predict.PNG'>
+<img src='/static/dashboard_preditct.PNG'>
 
 ## Dashboard Flask: Visualize
 <img src='/static/dashboard_result.PNG'>
