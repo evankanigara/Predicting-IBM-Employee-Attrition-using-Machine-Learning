@@ -30,7 +30,7 @@
         <form method="POST" action = "http://127.0.0.1:5000/result">
 
         <h5><span class="badge badge-secondary">Umur</span>    
-            <input type="number" name="Umur" step="1" min="18" max="60" placeholder="18-60" required/></h5>
+            <input type="number" name="age" step="1" min="18" max="60" placeholder="18-60" required/></h5>
 
         <h5><span class="badge badge-secondary">Tingkat Kepergian</span><br>
             <input type="radio" id="Travel_Rarely" name="fal" value="Travel_Rarely">
@@ -44,50 +44,134 @@
             <input type="number" name="daily_rate" step="1" min="102" max="1499" placeholder="102-1499" required/></h5>
 
         <h5><span class="badge badge-secondary">Departemen</span><br>    
-            <input type="radio" id="Sales" name="fal" value="Sales">
-            <label for="low">Sales</label><br>
-            <input type="radio" id="Research & Development" name="fal" value="Research & Development">
-            <label for="medium">Research & Development</label><br>
-            <input type="radio" id="Human Resources" name="fal" value="Human Resources">
-            <label for="high">Human Resources</label></h5>        
+            <input type="radio" id="Sales" name="department" value="Sales">
+            <label for="Sales">Sales</label><br>
+            <input type="radio" id="Research & Development" name="department" value="Research & Development">
+            <label for="Research & Development">Research & Development</label><br>
+            <input type="radio" id="Human Resources" name="department" value="Human Resources">
+            <label for="Human Resources">Human Resources</label></h5>   
+            
+        <h5><span class="badge badge-secondary">Jarak rumah ke kantor</span>    
+            <input type="number" name="distance_from_home" step="1" min="1" max="29" placeholder="1-29" required/></h5>
 
-        <h5><span class="badge badge-secondary">fixed acidity level</span>
-            <input type="radio" id="low" name="fal" value="low">
-            <label for="low">Low</label><br>
-            <input type="radio" id="medium" name="fal" value="medium">
-            <label for="medium">Medium</label><br>
-            <input type="radio" id="high" name="fal" value="high">
-            <label for="high">High</label></h5>
+        <h5><span class="badge badge-secondary">Tingkat pendidikan (ordinal)</span>    
+            <input type="number" name="education" step="1" min="1" max="5" placeholder="1-5" required/></h5>
+    
+        <h5><span class="badge badge-secondary">Bidang pendidikan</span><br>    
+            <input type="radio" id="Life Sciences" name="education_field" value="Life Sciences">
+            <label for="Life Sciences">Life Sciences</label><br>
+            <input type="radio" id="Medical" name="education_field" value="Medical">
+            <label for="Medical">Medical</label><br>
+            <input type="radio" id="Marketing" name="education_field" value="Marketing">
+            <label for="Marketing">Marketing</label>
+            <input type="radio" id="Technical Degree" name="education_field" value="Technical Degree">
+            <label for="Technical Degree">Technical Degree</label>
+            <input type="radio" id="Human Resources" name="education_field" value="Human Resources">
+            <label for="Human Resources">Human Resources</label><br>
+            <input type="radio" id="Other" name="education_field" value="Other">
+            <label for="Other">Other</label><br></h5>
+            
+        <h5><span class="badge badge-secondary">Tingkat kepuasan terhadap lingkugan kerja</span>    
+            <input type="number" name="environment_satisfaction" step="1" min="1" max="4" placeholder="1-5" required/></h5>
 
-        <h5><span class="badge badge-secondary">chlorides level</span>
-            <input type="radio" id="low" name="cl" value="low">
-            <label for="low">Low</label><br>
-            <input type="radio" id="medium" name="cl" value="medium">
-            <label for="medium">Medium</label><br>
-            <input type="radio" id="high" name="cl" value="high">
-            <label for="high">High</label></h5>            
+        <h5><span class="badge badge-secondary">Gender</span><br>    
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label><br></h5>
+
+        <h5><span class="badge badge-secondary">Upah Perjam</span>    
+            <input type="number" name="hourly_rate" step="1" min="30" max="100" placeholder="30-100" required/></h5>
+
+        <h5><span class="badge badge-secondary">Jumlah proyek yang pernah dipegang</span>    
+            <input type="number" name="job_involvement" step="1" min="1" max="4" placeholder="1-4" required/></h5>
+
+        <h5><span class="badge badge-secondary">Tingkatan jabatan (ordinal)</span>    
+            <input type="number" name="job_level" step="1" min="1" max="5" placeholder="1-5" required/></h5>
+
+        <h5><span class="badge badge-secondary">Peran dalam pekerjaan</span><br>    
+            <input type="radio" id="Sales Executive" name="job_role" value="Sales Executive">
+            <label for="Sales Executive">Sales Executive</label><br>
+            <input type="radio" id="Research Scientist" name="job_role" value="Research Scientist">
+            <label for="Research Scientist">Research Scientist</label><br>
+            <input type="radio" id="Laboratory Technician" name="job_role" value="Laboratory Technician">
+            <label for="Laboratory Technician">Laboratory Technician</label>
+            <input type="radio" id="Manufacturing Director" name="job_role" value="Manufacturing Director">
+            <label for="Manufacturing Director">Manufacturing Director</label>
+            <input type="radio" id="Healthcare Representative " name="job_role" value="Healthcare Representative">
+            <label for="Healthcare Representative">Healthcare Representative</label><br>
+            <input type="radio" id="Manager" name="job_role" value="Manager">
+            <label for="Manager">Manager</label><br>
+            <input type="radio" id="Sales Representative" name="job_role" value="Sales Representative">
+            <label for="Sales Representative">Sales Representative</label><br>
+            <input type="radio" id="Research Director" name="job_role" value="Research Director">
+            <label for="Research Director">Research Director</label><br>
+            <input type="radio" id="Human Resources" name="job_role" value="Human Resources">
+            <label for="Human Resources">Human Resources</label><br></h5>
+
+        <h5><span class="badge badge-secondary">Tingkat kepuasan dalam bekerja</span>    
+            <input type="number" name="JobSatisfaction" step="1" min="1" max="4" placeholder="1-4" required/></h5>
+
+        <h5><span class="badge badge-secondary">Status hubungan</span><br>    
+            <input type="radio" id="Single" name="marital_status" value="Single">
+            <label for="Single">Single</label><br>
+            <input type="radio" id="Married" name="marital_status" value="Married">
+            <label for="Married">Married</label><br>
+            <input type="radio" id="Divorced" name="marital_status" value="Divorced">
+            <label for="Divorced">Divorced</label></h5>
+
+        <h5><span class="badge badge-secondary">Gaji bulanan</span>    
+            <input type="number" name="monthly_income" step="1" min="1009" max="19999" placeholder="1009-19999" required/></h5>
+
+        <h5><span class="badge badge-secondary">Upah bulanan</span>    
+            <input type="number" name="monthly_rate" step="1" min="2094" max="26999" placeholder="2094-26999" required/></h5>
+
+        <h5><span class="badge badge-secondary">Jumlah perusahaan yang pernah ditempati</span>    
+            <input type="number" name="num_companies_worked" step="1" min="0" max="9" placeholder="0-9" required/></h5>
+
+        <h5><span class="badge badge-secondary">Lembur</span><br>    
+            <input type="radio" id="Yes" name="over_time" value="Yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="over_time" value="No">
+            <label for="No">No</label><br></h5>
+
+        <h5><span class="badge badge-secondary">Persentase kenaikan gaji</span>    
+            <input type="number" name="percent_salary_hike" step="1" min="11" max="25" placeholder="11-25" required/></h5>
+
+        <h5><span class="badge badge-secondary">Rating performa pekerja</span>    
+            <input type="number" name="performance_rating" step="1" min="3" max="4" placeholder="3-4" required/></h5>
+
+        <h5><span class="badge badge-secondary">Tingkat kebahagiaan dalam kehidupan personal</span>    
+            <input type="number" name="relationship_statisfaction" step="1" min="1" max="4" placeholder="1-4" required/></h5>
+ 
+        <h5><span class="badge badge-secondary">Kepemilikan opsi saham di perusahaan</span>    
+            <input type="number" name="stock_option_level" step="1" min="0" max="3" placeholder="1-4" required/></h5>
+
+        <h5><span class="badge badge-secondary">Lama bekerja secara umum</span>    
+            <input type="number" name="total_working_years" step="1" min="0" max="40" placeholder="0-40" required/></h5>
+
+        <h5><span class="badge badge-secondary">Lama pelatihan</span>    
+            <input type="number" name="training_times_last_year" step="1" min="0" max="6" placeholder="0-6" required/></h5>
+
+        <h5><span class="badge badge-secondary">Kualitas work life balance</span>    
+            <input type="number" name="work_life_balance" step="1" min="1" max="4" placeholder="1-4" required/></h5>
+
+        <h5><span class="badge badge-secondary">Tahun di perusahaan sekarang</span>    
+            <input type="number" name="years_at_company" step="1" min="0" max="40" placeholder="0-40" required/></h5>
+
+        <h5><span class="badge badge-secondary">Berapa tahun di posisi sekarang?</span>    
+            <input type="number" name="years_in_current_role" step="1" min="0" max="18" placeholder="0-18" required/></h5>
+
+        <h5><span class="badge badge-secondary">Berapa tahun sejak promosi terakhir?</span>    
+            <input type="number" name="years_since_last_promotion" step="1" min="0" max="15" placeholder="0-15" required/></h5>
+
+        <h5><span class="badge badge-secondary">Berapa tahun sejak dengan manajer saat ini?</span>    
+            <input type="number" name="years_with_curr_manager" step="1" min="0" max="17" placeholder="0-17" required/></h5>
 
 
-        <!-- <h5><span class="badge badge-secondary">TOEFL Score</span>
-            <input type="number" name="tf" step="1" min="92" max="120" placeholder="Type your TOEFL Score" required/></h5>
-
-        <h5><span class="badge badge-secondary">University Rating</span>
-            <input type="number" name="ur" step="1" min="1" max="5" placeholder="Type your Universtiy Rating" required/></h5>
-        
-        <h5><span class="badge badge-secondary">SOP</span>
-            <input type="number" name="sp" step="1" min="1" max="5" placeholder="Type your SOP Score" required/></h5>  -->
-<!-- 
-        <h5><span class="badge badge-secondary">LOR</span>
-            <input type="number" name="lr" step="1" min="1" max="5" placeholder="Type your LOR Score" required/></h5>
-
-        <h5><span class="badge badge-secondary">CGPA</span>
-            <input type="number" name="gp" step="0.1" min="6.8" max="9.92" placeholder="Type your CGPA Score" required/></h5>  -->
-
-        <!-- <h5><span class="badge badge-secondary">Research</span>
-            <input type="number" name="rs" step="1" min="0" max="1" placeholder="Type your Research Score" required/></h5> -->
 
         <br><br>
-        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px;background-color:#2a7886; color: cornsilk; type="button" class="btn btn-info">🔍 Predict</button>
+        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px;background-color:black; color: cornsilk; type="button" class="btn btn-info">🔍 Predict</button>
         </form><br>
         </center>
     </div>
@@ -96,7 +180,7 @@
     <!-- Log Out -->
     <center>
         <form action = "http://127.0.0.1:5000">
-        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px; background-color: #f50101;color: cornsilk;  type="button" class="btn btn-info"">Home</button>
+        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px; background-color: black;color: cornsilk;  type="button" class="btn btn-info"">Home</button>
         </form><br><br>
     </center>
     

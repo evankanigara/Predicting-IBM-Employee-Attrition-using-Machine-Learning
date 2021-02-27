@@ -19,26 +19,22 @@
 
     <!-- HEADING -->
     <center><br>
-        <img src="../static/logo.png" width="8%" ><br><br>
+        <img src="../static/logo.png" width="20%" ><br><br>
         <h2 class="display-4"><strong>Prediction</strong> <span class="badge badge-secondary">Result</span></h2>
         <br>
-        <h3>Alcohol Level: {{data['Alcohol']}}</h3>
-        <h3>Density Level: {{data['Density']}}</h3>
-        <h3>Fixed Acidity Level: {{data['fal']}}</h3>
-        <h3>Chlorides Level: {{data['cl']}}</h3>
     </center>
 
     <!-- RESULT -->
     <center><br>
-        <img src="../static/congrats.png" width="80%" ><br><br>
-        <h3 class="display-4"><strong>Your Wine Quality is</strong> <span class="badge badge-secondary">{{ pred }}</span></h3>
+        <img src="../static/congrats.png" width="30%" ><br><br>
+        <h3 class="display-4"><strong>Kecenderungan pekerja:</strong> <span class="badge badge-secondary">{{ pred }}</span></h3>
         <br>
     </center>
 
     <!-- Home -->
     <center>
         <form action = "http://127.0.0.1:5000">
-        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px; background-color: #f50101;color: cornsilk;  type="button" class="btn btn-info"">Home</button>
+        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px; background-color:black;color: cornsilk;  type="button" class="btn btn-info"">Home</button>
         </form><br><br>
     </center> 
 

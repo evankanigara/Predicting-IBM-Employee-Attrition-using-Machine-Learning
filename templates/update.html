@@ -14,9 +14,10 @@
   </script>
   <link rel="stylesheet" href="styles.css">
 
-  <title>Dataset</title>
-
-
+<!-- HEADING -->
+<center><br>
+    <img src="../static/logo.png" width="20%" ><br><br>
+    </center>
 
 <meta http-equiv="Content-Style-Type" content="text/css">
 <style type="text/css"><!--
@@ -92,7 +93,7 @@ p,ul,ol /* Paragraph Style */
                 <font color="black"><strong>IBM Employee Attrition </strong>
                 </font><span class="badge badge-secondary">Dataset</span>
             </h2><br><br>
-            <center>tes</center>
+            <h5><center>Data terdiri dari 1470 baris dan 35 kolom. Terdapat 9 fitur bertipe object dan 26 fitur bertipe integer.</center></h5><br><br>
 </body>
 
 <body>
@@ -106,6 +107,31 @@ p,ul,ol /* Paragraph Style */
                 <td>Department</td>
                 <td>DistanceFromHome</td>
                 <td>Education</td>
+                <td>EducationField</td>
+                <td>EnvironmentSatisfaction</td>
+                <td>Gender</td>
+                <td>HourlyRate</td>
+                <td>JobInvolvement</td>
+                <td>JobLevel</td>
+                <td>JobRole</td>
+                <td>JobSatisfaction</td>
+                <td>MaritalStatus</td>
+                <td>MonthlyIncome</td>
+                <td>MonthlyRate</td>
+                <td>NumCompaniesWorked	</td>
+                <td>OverTime</td>
+                <td>PercentSalaryHike</td>
+                <td>PerformanceRating</td>
+                <td>RelationshipSatisfaction</td>
+                <td>StockOptionLevel</td>
+                <td>TotalWorkingYears</td>
+                <td>TrainingTimesLastYear</td>
+                <td>WorkLifeBalance</td>
+                <td>YearsAtCompany</td>
+                <td>YearsInCurrentRole</td>
+                <td>YearsSinceLastPromotion</td>
+                <td>YearsWithCurrManager</td>
+
             </th>
             {% for item in data %}
             <tr>
@@ -116,7 +142,32 @@ p,ul,ol /* Paragraph Style */
                 <td>{{item[3]}}</td>
                 <td>{{item[4]}}</td>
                 <td>{{item[5]}}</td>
-                <td>{{item[6]}}</td>
+                <td>{{item[7]}}</td>
+                <td>{{item[8]}}</td>
+                <td>{{item[9]}}</td>
+                <td>{{item[10]}}</td>
+                <td>{{item[11]}}</td>
+                <td>{{item[12]}}</td>
+                <td>{{item[13]}}</td>
+                <td>{{item[14]}}</td>
+                <td>{{item[15]}}</td>
+                <td>{{item[16]}}</td>
+                <td>{{item[17]}}</td>
+                <td>{{item[18]}}</td>
+                <td>{{item[19]}}</td>
+                <td>{{item[20]}}</td>
+                <td>{{item[21]}}</td>
+                <td>{{item[22]}}</td>
+                <td>{{item[23]}}</td>
+                <td>{{item[24]}}</td>
+                <td>{{item[25]}}</td>
+                <td>{{item[26]}}</td>
+                <td>{{item[27]}}</td>
+                <td>{{item[28]}}</td>
+                <td>{{item[29]}}</td>
+                <td>{{item[30]}}</td>
+                <td>{{item[31]}}</td>
+
             </tr>
             {% endfor %}
         </table>
@@ -125,7 +176,7 @@ p,ul,ol /* Paragraph Style */
 <!-- Home -->
     <center>
         <form action = "http://127.0.0.1:5000">
-        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px; background-color: #f50101;color: cornsilk;  type="button" class="btn btn-info"">Home</button>
+        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px; background-color: black;color: cornsilk;  type="button" class="btn btn-info"">Home</button>
         </form><br><br>
     </center> 
 
