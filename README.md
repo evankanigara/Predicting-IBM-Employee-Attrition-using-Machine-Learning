@@ -66,8 +66,20 @@ Proses pembersihan dan transformasi dilakukan dalam sebuah pipeline. Dalam pipel
 
 Scoring yang diutamakan dalam klasifikasi adalah Recall. Perusahaan ingin sebanyak-banyaknya mencegah pekerjanya yang hendak resign. Kehilangan pekerja akan menyebabkan perusahaan merugi karena harus melaukan rekrutmen dan pelatihan ulang. Setelah berbagai algoritma digunakan untuk melihat hasil recall terbaik, maka dipilihlah logistic regression. Meskipun begitu, tingkatan presisi secara umum cenderung rendah. Perusahaan harus berhati-hati jangan sampai proses perawatan pekerjanya justru membuat perusahaan merugi lebih banyak. 
 
-## Dashboard
-<img src='/static/dashboard.PNG'>
+## Dashboard Flask: Home
+<img src='/static/dashboard_home.PNG'>
+
+## Dashboard Flask: Dataset
+<img src='/static/dashboard_dataset.PNG'>
+
+## Dashboard Flask: Visualize
+<img src='/static/dashboard_visual.PNG'>
+
+## Dashboard Flask: Predict
+<img src='/static/dashboard_predict.PNG'>
+
+## Dashboard Flask: Visualize
+<img src='/static/dashboard_result.PNG'>
 
 ## Kesimpulan
 <a href='https://mnwi.usi.com/Resources/Resource-Library/Resource-Library-Article/ArtMID/666/ArticleID/782/Cost-of-employee-turnover#:~:text=The%20Society%20for%20Human%20Resource,in%20recruiting%20and%20training%20costs.'>Penelitian</a> dari Society for Human Resource Management (SHRM) mengatakan bahwa kerugian rekrutmen dan pelatihan ulang akibat employee attrition adalah sebesar 6 sampai 9 kali dari gaji pekerja yang resign. Rata-rata gaji bulanan pekerja IBM adalah $6500. Maka kerugian IBM karena satu pekerjanya yang resign adalah $39000. Dengan asumsi perusahaan pada akhirnya dapat mencegah semua employee attrition yang diprediksi, recall prediksi klasifikasi sebesar 77% akan membuat perusahaan menghemat pengeluaran sebesar $1404000.
